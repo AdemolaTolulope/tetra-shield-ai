@@ -21,6 +21,21 @@
 | Robustness | 400× Monte‑Carlo weight perturbation, Kendall's W, ablation, baselines | **W = 0.955** |
 | Reports | reportlab PDF + JSON + CSV | `/api/report/{id}?format=pdf` |
 
+## Screenshots — every screen, explained to the core
+
+> Full walkthrough with captions: **[docs/SHOWCASE.md](docs/SHOWCASE.md)** (16 screens, captured live in offline mode)
+
+| | | |
+|---|---|---|
+| ![home](assets/screenshots/01_home.png) | ![candidate](assets/screenshots/04_candidate_detail.png) | ![safety](assets/screenshots/06_safety_pathways.png) |
+| **Home — pipeline + doctrine** | **Candidate dossier (TetX2, 2Y6R)** | **Products & residual activity** |
+| ![decision](assets/screenshots/09_decision_engine.png) | ![why](assets/screenshots/13_why_explained.png) | ![whatif](assets/screenshots/14_whatif_amr.png) |
+| **Decision engine + WHAT-IF** | **WHY? explainability** | **AMR-stance flips ranking** |
+| ![discovery](assets/screenshots/03_discovery.png) | ![amr](assets/screenshots/07_amr_shield.png) | ![circular](assets/screenshots/08_circular_cassava.png) |
+| **Discovery with evidence chips** | **AMR SHIELD** | **Cassava circular layer** |
+| ![analyze](assets/screenshots/16_analyze_complete.png) | ![compare](assets/screenshots/10_compare.png) | ![report](assets/screenshots/11_report.png) |
+| **Live ANALYZE chain** | **Compare** | **Report export** |
+
 ## Run it (offline‑first)
 
 ```bash
