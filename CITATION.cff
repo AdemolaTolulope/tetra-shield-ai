@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "TETRA-SHIELD AI: Environmental Biotransformation Decision Intelligence (BioShield-X platform)"
+abstract: "Offline-capable, explainable decision engine for AMR-aware enzymatic bioremediation of antibiotic pollution: validated docking, sequence and cheminformatics intelligence, product-safety and AMR screening, cassava-waste circular bioremediation, and an inspectable priority-scoring engine."
+type: software
+license: MIT
+version: 1.0.0
+date-released: 2026-09-19
+repository-code: "https://github.com/ademmanlincoln07-crypto/tetra-shield-ai"
+keywords: [bioremediation, tetracycline, antimicrobial-resistance, bioinformatics, decision-support, enzyme, docking, nigeria, cassava, circular-economy]
