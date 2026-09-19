@@ -1,0 +1,170 @@
+[
+  {
+    "id": "L01",
+    "cite": "Yang W et al. 2004. TetX Is a Flavin-dependent Monooxygenase Conferring Resistance to Tetracycline Antibiotics. J Biol Chem 279(50):52346\u201352",
+    "doi": "10.1074/jbc.M409573200",
+    "evidence": "E1",
+    "claim": "TetX/TetX2 are FAD-dependent monooxygenases requiring NADPH and O2; regiospecific C11a hydroxylation; product unstable, decomposes non-enzymatically; downstream products inactive."
+  },
+  {
+    "id": "L02",
+    "cite": "Volkers G et al. 2011. Structural basis for a new tetracycline resistance mechanism relying on the TetX monooxygenase. J Mol Biol 416(5):2212\u201325",
+    "doi": "10.1016/j.jmb.2011.12.063",
+    "evidence": "E1/E4",
+    "claim": "Crystal structures of TetX (Bacteroides fragilis) and TetX2 (B. thetaiotaomicron) incl. tigecycline and 7-chlortetracycline complexes; FAD-binding and substrate-binding residues defined."
+  },
+  {
+    "id": "L03",
+    "cite": "He T et al. 2019. Emergence of plasmid-mediated high-level tigecycline resistance genes in animals and humans. Nat Microbiol 4:1450\u20136",
+    "doi": "10.1038/s41564-019-0445-2",
+    "evidence": "E1",
+    "claim": "Mobile tet(X3)/tet(X4) on plasmids confer high-level tigecycline resistance; widespread dissemination; tet(X4) functionally validated."
+  },
+  {
+    "id": "L04",
+    "cite": "Jin L et al. 2021. Evolutionary Trajectory of the Tet(X) Family. mSystems 6(3):e00050-21",
+    "doi": "10.1128/mSystems.00050-21",
+    "evidence": "E2/E3",
+    "claim": "Tet(X) family phylogeny; key residues H231, M372 (substrate region), E43, R114, D308 (FAD region); anhydrotetracycline inhibits Tet(X) enzymes."
+  },
+  {
+    "id": "L05",
+    "cite": "Markley JL, Wencewicz TA. 2018. Tetracycline-Inactivating Enzymes. Front Microbiol 9:1058",
+    "doi": "10.3389/fmicb.2018.01058",
+    "evidence": "review",
+    "claim": "Tetracycline destructases (Tet(X) family) are environmental flavoenzymes; enzymatic inactivation is a growing resistance mechanism; products undergo non-enzymatic breakdown."
+  },
+  {
+    "id": "L06",
+    "cite": "Suda T et al. 2012. Treatment of tetracycline antibiotics by laccase in the presence of 1-hydroxybenzotriazole. Bioresour Technol 103(1):498\u2013501",
+    "doi": "10.1016/j.biortech.2011.10.041",
+    "evidence": "E2",
+    "claim": "Laccase (Trametes sp.) eliminates tetracycline antibiotics in vitro, strongly enhanced by redox mediator HBT."
+  },
+  {
+    "id": "L07",
+    "cite": "Wen X, Jia Y, Li J. 2010. Enzymatic degradation of tetracycline and oxytetracycline by crude manganese peroxidase prepared from Phanerochaete chrysosporium. J Hazard Mater 177(1\u20133):924\u20138",
+    "doi": "10.1016/j.jhazmat.2010.01.005",
+    "evidence": "E2",
+    "claim": "MnP (white-rot fungus) degrades tetracycline/oxytetracycline; MnP identified TC transformation pathway (demethylation, oxidation of dimethylamino, decarbonylation, hydroxylation, oxidative dehydrogenation) and 7 possible products."
+  },
+  {
+    "id": "L08",
+    "cite": "Zhang Y et al. 2023. Comparative Metagenomic and Metatranscriptomic Analyses Reveal the Response of Black Soldier Fly Larvae Intestinal Microbes and Reduction Mechanisms to High Concentrations of Tetracycline. Toxics 11(7):611",
+    "doi": "10.3390/toxics11070611",
+    "evidence": "E3",
+    "claim": "BSFL gut metatranscriptome under 1250 mg/kg TC: tet(X) family NOT detected; TC degradation rate 32.2% vs 11.5% germ-free; upregulated CAZyme families AA1 (laccase-like) and AA2 (MnP/lignin-peroxidase-like) and deacetylases proposed as degradation candidates; efflux (tet(33), tet(A), tet(B), tet(L), tetA(60)) and RPP (tetM, tetW) dominate resistance response."
+  },
+  {
+    "id": "L09",
+    "cite": "Pei Y et al. 2025. Novel Tetracycline-Degrading Enzymes from the Gut Microbiota of Black Soldier Fly: Discovery, Performance, Degradation Pathways, Mechanisms, and Application Potential. (Record: ResearchGate, May 2025; verify journal metadata)",
+    "doi": "pending-verification",
+    "evidence": "E1/E2",
+    "claim": "2025 work identifying tetracycline-degrading enzyme candidates from BSFL gut microbiota; degradation pathways and application potential assessed."
+  },
+  {
+    "id": "L10",
+    "cite": "Bioresour Technol 2025;435:132887. Synergistic mechanism of tetracycline degradation by Serratia marcescens cooperated with black soldier fly larvae",
+    "doi": "10.1016/j.biortech.2025.132887",
+    "evidence": "E2",
+    "claim": "tet34 and UGT2B7 identified as principal genes in S. marcescens BSFL-6/larvae synergistic tetracycline metabolism (genome + transcriptome + overexpression/RNAi)."
+  },
+  {
+    "id": "L11",
+    "cite": "Olarinmoye O, Bakare A, Ugwumba O, Hein A. 2016. Quantification of pharmaceutical residues in wastewater impacted surface waters and sewage sludge from Lagos, Nigeria. J Environ Chem Ecotoxicol 8(2):14\u201324",
+    "doi": "10.5897/JECE2015.0355",
+    "evidence": "E2(field)",
+    "claim": "Pharmaceuticals incl. tetracycline-class detected in Lagos surface waters (up to 8.84 \u00b5g/L across compounds; chlortetracycline <0.05 \u00b5g/L) and sewage sludge."
+  },
+  {
+    "id": "L12",
+    "cite": "Ajibola AS, Zwiener C. 2022. Occurrence and risk assessment of antibiotic residues in sewage sludge of two Nigerian hospital wastewater treatment plants. Water Air Soil Pollut 233:405",
+    "doi": "10.1007/s11270-022-05875-4",
+    "evidence": "E2(field)",
+    "claim": "Tetracycline up to 310.2 ng/g (Ijaiye sludge); oxytetracycline detected; 100% detection frequency in secondary sludge; risk assessment for land application."
+  },
+  {
+    "id": "L13",
+    "cite": "Liu C et al. 2021. Black Soldier Fly Larvae Can Effectively Degrade Oxytetracycline Bacterial Residue by Means of the Gut Bacterial Community. Frontiers/Animals (record via PMC8239407)",
+    "doi": "10.3389/fanim.2021 (verify)",
+    "evidence": "E2",
+    "claim": "BSFL degrade oxytetracycline residue; hosts of enzymatic-modification tetracycline genes incl. Enterococcus, Ignatzschineria, Bordetella, Providencia, Proteus."
+  },
+  {
+    "id": "L14",
+    "cite": "Yang Q et al. 2021. Novel sodium bicarbonate activation of cassava ethanol sludge derived biochar for removing tetracycline from aqueous solution. Bioresour Technol (2021), S0960852421002881",
+    "doi": "10.1016/j.biortech.2021.124557",
+    "evidence": "E2",
+    "claim": "Cassava ethanol-sludge biochar adsorbs tetracycline: 154.45 mg/g (NaHCO3-activated) vs 34.04 mg/g raw; max removal 92.6% at pH 3; mechanisms: electrostatic, H-bonding, pi\u2013pi, pore-filling. ADSORPTION only."
+  },
+  {
+    "id": "L15",
+    "cite": "2026. Hierarchical factors governing the removal of ionizable pharmaceuticals by cassava peel\u2013derived biochar: Bayesian modeling and DFT approaches. (ScienceDirect S259012302601563X)",
+    "doi": "10.1016/j.jcou.2026 (verify)",
+    "evidence": "E2",
+    "claim": "Cassava PEEL biochar effectively adsorbs ciprofloxacin (ionizable pharmaceutical); circular-economy rationale stated. NOT tetracycline-specific."
+  },
+  {
+    "id": "L16",
+    "cite": "Hoslett J et al. 2021. The removal of tetracycline from water using biochar produced from agricultural discarded material. Sci Total Environ 751:141755",
+    "doi": "10.1016/j.scitotenv.2020.141755",
+    "evidence": "E2",
+    "claim": "Agricultural-waste biochars remove tetracycline from water by adsorption."
+  },
+  {
+    "id": "L17",
+    "cite": "Daghrir R, Drogui P. 2013. Tetracycline antibiotics in the environment: a review. Environ Chem Lett 11:209\u201327",
+    "doi": "10.1007/s10311-013-0404-8",
+    "evidence": "review",
+    "claim": "Environmental fate: sorption, hydrolysis, photolysis; epimerisation; complexation with cations."
+  },
+  {
+    "id": "L18",
+    "cite": "Mitscher LA. 1978. The Chemistry of the Tetracycline Antibiotics. Marcel Dekker, New York",
+    "doi": "n/a (monograph)",
+    "evidence": "review",
+    "claim": "4-epitetracycline (C4 epimer) retains partial antibacterial activity and equilibrates with parent; anhydrotetracycline = acid-degradation product with altered activity/toxicity profile."
+  },
+  {
+    "id": "L19",
+    "cite": "Grenni P, Ancona V, Caracciolo AB. 2018. Ecological effects of antibiotics on natural ecosystems: a review. Microchem J 136:25\u201339",
+    "doi": "10.1016/j.microc.2017.02.006",
+    "evidence": "review",
+    "claim": "Sub-inhibitory environmental antibiotic concentrations select for resistance and affect microbial communities \u2014 the AMR-environment link."
+  },
+  {
+    "id": "L20",
+    "cite": "Brieflands J Kermanshah Univ Med Sci 2025. Characterization and Antibiotic Sensitivity Profile of Two Bacteria Isolated from a Marine Environment in Lagos State, Nigeria",
+    "doi": "10.5812/jkums-166173",
+    "evidence": "E2(field)",
+    "claim": "Lagos marine isolates resistant to tetracycline; transferable tetA/tetB/tetM reported in Nigerian aquatic E. coli/P. aeruginosa (and cited studies)."
+  },
+  {
+    "id": "L21",
+    "cite": "CARD \u2014 Comprehensive Antibiotic Resistance Database (accessed 2026)",
+    "doi": "10.1093/nar/gkz935",
+    "evidence": "database",
+    "claim": "tet(X) family catalogued as tetracycline-inactivation resistance determinants; tet(34) efflux/other mechanisms documented; tetM/tetW RPP; tetA/B/L efflux."
+  },
+  {
+    "id": "L22",
+    "cite": "UniProtKB (accessed 2026-09-17): Q01911 (TETX_BACFG), Q93L51 (TETX_BACT4), Q7X2A0 (tetX3), Q02567 (MNP1_PHACH), Q12718 (LAC2_TRAVE)",
+    "doi": "10.1093/nar/gkab1100",
+    "evidence": "database",
+    "claim": "Protein records: names, genes, organisms, lengths, EC numbers."
+  },
+  {
+    "id": "L23",
+    "cite": "RCSB PDB: 2Y6R (TetX2 + 7-chlortetracycline + FAD, 3.1 A), 4A6N (TetX + tigecycline, 2.3 A), 1MNP (MnP, 2.0 A), 1GYC (Trametes versicolor laccase, 1.9 A)",
+    "doi": "10.2210/pdb2Y6R/pdb",
+    "evidence": "E4",
+    "claim": "Experimentally determined structures used in this prototype."
+  },
+  {
+    "id": "L24",
+    "cite": "AlphaFold DB: AF-Q01911-F1 (computed model of TetX, B. fragilis)",
+    "doi": "10.1093/nar/gkab1061",
+    "evidence": "E4(predicted)",
+    "claim": "Predicted structure, mean pLDDT 95.3 \u2014 clearly labelled PREDICTED, not experimental."
+  }
+]

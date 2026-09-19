@@ -1,0 +1,24 @@
+dataset,source,accession/id,url,version,retrieval_date,evidence_type,license
+tetracycline properties,PubChem PUG-REST,CID 54675776,https://pubchem.ncbi.nlm.nih.gov/compound/54675776,live API,2026-09-17,authoritative chemical database,public domain (US Gov)
+tetracycline 3D conformer,PubChem,CID 54675776 (3D SDF),same,live API,2026-09-17,computed conformer (vendor),public domain
+4-epitetracycline record,PubChem,CID 54682506,https://pubchem.ncbi.nlm.nih.gov/compound/54682506,live API,2026-09-17,database,public domain
+anhydrotetracycline record,PubChem,CID 54675758,https://pubchem.ncbi.nlm.nih.gov/compound/54675758,live API,2026-09-17,database,public domain
+TetX sequence,UniProtKB,Q01911,https://rest.uniprot.org/uniprotkb/Q01911,2026 release,2026-09-17,curated protein record,CC BY 4.0
+TetX2 sequence,UniProtKB,Q93L51,https://rest.uniprot.org/uniprotkb/Q93L51,2026 release,2026-09-17,protein record,CC BY 4.0
+Tet(X3) sequence,UniProtKB,Q7X2A0,https://rest.uniprot.org/uniprotkb/Q7X2A0,2026 release,2026-09-17,protein record,CC BY 4.0
+MnP1 sequence,UniProtKB,Q02567,https://rest.uniprot.org/uniprotkb/Q02567,2026 release,2026-09-17,protein record,CC BY 4.0
+Laccase-2 sequence,UniProtKB,Q12718,https://rest.uniprot.org/uniprotkb/Q12718,2026 release,2026-09-17,protein record,CC BY 4.0
+TetX2 structure + 7-CTC + FAD,RCSB PDB,"2Y6R (3.1 A, X-ray)",https://www.rcsb.org/structure/2Y6R,live,2026-09-17,experimental structure,CC0
+TetX + tigecycline structure,RCSB PDB,"4A6N (2.3 A, X-ray)",https://www.rcsb.org/structure/4A6N,live,2026-09-17,experimental structure,CC0
+MnP structure,RCSB PDB,"1MNP (2.0 A, X-ray)",https://www.rcsb.org/structure/1MNP,live,2026-09-17,experimental structure,CC0
+T. versicolor laccase structure,RCSB PDB,"1GYC (1.9 A, X-ray)",https://www.rcsb.org/structure/1GYC,live,2026-09-17,experimental structure,CC0
+TetX predicted structure,AlphaFold DB,AF-Q01911-F1 v6,https://alphafold.ebi.ac.uk/entry/Q01911,v6,2026-09-17,PREDICTED structure (labelled),CC BY 4.0
+docking results,smina 2019-10-15 static (Vina 1.1.2),results/docking/*,in-repo artifacts,"seed 42, exhaustiveness 16",2026-09-17,computed this project,in-repo
+redock validation,RDKit + scipy (Hungarian+Kabsch),results/docking/docking_results.json,in-repo,n/a,2026-09-17,computed this project,in-repo
+sequence identity matrix,Biopython PairwiseAligner,results/sequence_analysis.json,in-repo,Biopython 1.85,2026-09-17,computed this project,in-repo
+product cheminformatics,RDKit,results/product_cheminformatics.json,in-repo,RDKit 2025,2026-09-17,computed this project,in-repo
+literature knowledge base,peer-reviewed + databases,L01–L24,see data/processed/kb/literature.json,n/a,2026-09-17,curated citations w/ DOIs,n/a
+Nigeria occurrence records,Olarinmoye 2016; Ajibola & Zwiener 2022; JKUMS 2025,"L11, L12, L20",see literature.json,n/a,2026-09-17,field studies,n/a
+cassava adsorption evidence,Bioresour Technol 2021; 2026 CP-biochar study; STOTEN 2021,"L14, L15, L16",see literature.json,n/a,2026-09-17,batch adsorption studies,n/a
+BSFL tetracycline genomics,Toxics 2023 11:611; Pei et al. 2025; Bioresour Technol 2025 435:132887,"L08–L10, L13",see literature.json,n/a,2026-09-17,metatranscriptomic/functional,n/a
+AMR mechanism catalog,"CARD (concept-level, accessed via literature)",L21,https://card.mcmaster.ca,2026,2026-09-17,AMR database,see card.mcmaster.ca

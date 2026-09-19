@@ -1,0 +1,36 @@
+{
+  "tetracycline_resistance_mechanisms": [
+    {
+      "class": "enzymatic inactivation",
+      "genes": [
+        "tet(X) family: tetX, tetX2, tet(X3), tet(X4), tet(X5)... tet(X14)"
+      ],
+      "note": "FAD monooxygenases; environmental origin; mobilised variants (X3/X4) confer high-level tigecycline resistance (L03, L05)",
+      "concern": "HIGH"
+    },
+    {
+      "class": "efflux pumps",
+      "genes": [
+        "tet(A)",
+        "tet(B)",
+        "tet(L)",
+        "tet(33)",
+        "tetA(60)",
+        "tet34 (efflux/other; implicated in BSFL-6 synergy, L10)"
+      ],
+      "concern": "HIGH (mobile, common in wastewater)"
+    },
+    {
+      "class": "ribosomal protection proteins",
+      "genes": [
+        "tet(M)",
+        "tet(W)",
+        "tet(O)",
+        "tet(Q)"
+      ],
+      "concern": "HIGH (very widespread)"
+    }
+  ],
+  "selection_context": "Sub-MIC antibiotic residues select resistant populations; aquatic systems act as resistance reservoirs and HGT arenas (L19). BSFL gut: degradation co-occurs with enrichment of tet efflux/RPP genes (L08, L10).",
+  "database_note": "Screening categories (LOW/MODERATE/HIGH CONCERN) are computational triage \u2014 NOT clinical or regulatory determinations. 'No detected association' != 'AMR-free'."
+}

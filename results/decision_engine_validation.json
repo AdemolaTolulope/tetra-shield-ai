@@ -1,0 +1,135 @@
+{
+  "sensitivity": {
+    "n_iterations": 400,
+    "weight_spread": 0.25,
+    "seed": 7,
+    "kendalls_W": 0.955,
+    "rank_stability": {
+      "TETX2-BT": {
+        "mean_rank": 1.0,
+        "min_rank": 1,
+        "max_rank": 2,
+        "p_top3": 1.0
+      },
+      "TETX-BF": {
+        "mean_rank": 2.39,
+        "min_rank": 2,
+        "max_rank": 4,
+        "p_top3": 0.89
+      },
+      "LAC-TV": {
+        "mean_rank": 2.72,
+        "min_rank": 1,
+        "max_rank": 3,
+        "p_top3": 1.0
+      },
+      "MNP-PC": {
+        "mean_rank": 3.89,
+        "min_rank": 3,
+        "max_rank": 5,
+        "p_top3": 0.12
+      },
+      "TETX3-PA": {
+        "mean_rank": 5.0,
+        "min_rank": 4,
+        "max_rank": 5,
+        "p_top3": 0.0
+      },
+      "BSFL-AA12": {
+        "mean_rank": 6.0,
+        "min_rank": 6,
+        "max_rank": 6,
+        "p_top3": 0.0
+      }
+    },
+    "interpretation": "Kendall's W near 1 = rankings highly stable to weight choice; instability is reported, not hidden."
+  },
+  "ablation": {
+    "full": {
+      "TETX2-BT": 89.2,
+      "TETX-BF": 84.2,
+      "LAC-TV": 82.7,
+      "MNP-PC": 81.2,
+      "TETX3-PA": 74.1,
+      "BSFL-AA12": 22.0
+    },
+    "without_AMR": {
+      "TETX2-BT": 100.0,
+      "TETX-BF": 97.9,
+      "TETX3-PA": 86.5,
+      "LAC-TV": 79.4,
+      "MNP-PC": 77.5,
+      "BSFL-AA12": 21.8
+    },
+    "without_product_safety": {
+      "LAC-TV": 96.4,
+      "MNP-PC": 93.6,
+      "TETX2-BT": 78.3,
+      "TETX-BF": 69.9,
+      "TETX3-PA": 56.7,
+      "BSFL-AA12": 21.6
+    },
+    "without_structure": {
+      "TETX2-BT": 87.8,
+      "TETX-BF": 84.3,
+      "TETX3-PA": 79.2,
+      "LAC-TV": 78.5,
+      "MNP-PC": 76.9,
+      "BSFL-AA12": 27.3
+    },
+    "without_environment": {
+      "TETX2-BT": 90.1,
+      "TETX-BF": 85.0,
+      "LAC-TV": 81.6,
+      "MNP-PC": 80.1,
+      "TETX3-PA": 74.5,
+      "BSFL-AA12": 18.8
+    },
+    "without_uncertainty": {
+      "TETX2-BT": 81.3,
+      "TETX-BF": 80.1,
+      "LAC-TV": 76.0,
+      "MNP-PC": 76.0,
+      "TETX3-PA": 73.7,
+      "BSFL-AA12": 22.4
+    },
+    "without_circularity": {
+      "TETX2-BT": 91.6,
+      "TETX-BF": 86.5,
+      "LAC-TV": 83.2,
+      "MNP-PC": 81.7,
+      "TETX3-PA": 75.9,
+      "BSFL-AA12": 21.4
+    }
+  },
+  "baselines": {
+    "literature_only": [
+      "TETX2-BT",
+      "TETX-BF",
+      "TETX3-PA",
+      "LAC-TV",
+      "MNP-PC",
+      "BSFL-AA12"
+    ],
+    "docking_only": [
+      "TETX2-BT",
+      "(only TETX2-BT has docking)"
+    ],
+    "sequence_family_only": [
+      "TETX2-BT",
+      "TETX-BF",
+      "TETX3-PA",
+      "LAC-TV",
+      "MNP-PC",
+      "BSFL-AA12"
+    ],
+    "tetra_shield_integrated": [
+      "TETX2-BT",
+      "TETX-BF",
+      "LAC-TV",
+      "MNP-PC",
+      "TETX3-PA",
+      "BSFL-AA12"
+    ]
+  }
+}

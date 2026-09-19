@@ -1,0 +1,457 @@
+[
+  {
+    "candidate_id": "TETX-BF",
+    "protein_name": "TetX monooxygenase (tetracycline-inactivating enzyme)",
+    "gene_name": "tetX",
+    "organism": "Bacteroides fragilis",
+    "source_environment": "human gut anaerobe; transposons Tn4351/Tn4400",
+    "accession": {
+      "uniprot": "Q01911",
+      "gene_synonyms": "tetX; Tcr*"
+    },
+    "sequence_fasta": "data/raw/Q01911.fasta",
+    "enzyme_family": "FAD-dependent monooxygenase (tetracycline destructase, EC 1.14.13.231); class A flavoprotein monooxygenase",
+    "cofactors": [
+      "FAD",
+      "NADPH",
+      "O2",
+      "Mg2+ (assay)"
+    ],
+    "annotation": "Catalyses regioselective C11a hydroxylation of tetracyclines; product unstable and decomposes non-enzymatically; downstream products lack antibacterial activity (functional loss demonstrated).",
+    "evidence_level": "E1",
+    "degradation_evidence": {
+      "status": "experimentally-demonstrated",
+      "refs": [
+        "L01",
+        "L02",
+        "L05"
+      ]
+    },
+    "resistance_association": {
+      "status": "HIGH CONCERN",
+      "mechanism": "enzymatic inactivation (tetX is itself a tetracycline resistance gene; confers resistance incl. tigecycline in family members)",
+      "databases": "CARD lists tet(X) as resistance determinant",
+      "refs": [
+        "L03",
+        "L21"
+      ],
+      "note": "Deploying purified enzyme avoids gene transfer; deploying the organism/gene biocatalytically carries HGT risk."
+    },
+    "structure": {
+      "kind": "predicted",
+      "source": "AlphaFold DB",
+      "id": "AF-Q01911-F1",
+      "mean_plddt": 95.3,
+      "experimental_homolog": "4A6N (B. fragilis TetX + tigecycline, 2.3 A) exists; used as template context",
+      "file": "structures/AF_Q01911.pdb",
+      "label": "PREDICTED MODEL (AlphaFold) \u2014 not an experimentally solved structure"
+    },
+    "docking": null,
+    "transformation": {
+      "pathway_id": "P1",
+      "type": "enzymatic hydroxylation (C11a) + non-enzymatic decomposition",
+      "known_vs_predicted": "KNOWN (first step) / products partially characterised"
+    },
+    "refs": [
+      "L01",
+      "L02",
+      "L04",
+      "L05",
+      "L22",
+      "L24"
+    ]
+  },
+  {
+    "candidate_id": "TETX2-BT",
+    "protein_name": "TetX2 monooxygenase",
+    "gene_name": "tetX2",
+    "organism": "Bacteroides thetaiotaomicron",
+    "source_environment": "human gut anaerobe",
+    "accession": {
+      "uniprot": "Q93L51",
+      "pdb": "2Y6R"
+    },
+    "sequence_fasta": "data/raw/Q93L51.fasta",
+    "enzyme_family": "FAD-dependent monooxygenase (tetracycline destructase)",
+    "cofactors": [
+      "FAD",
+      "NADPH",
+      "O2"
+    ],
+    "annotation": "Functionally validated tetracycline-inactivating enzyme (confers resistance in aerobically grown E. coli); broad tetracycline substrate range.",
+    "evidence_level": "E1",
+    "degradation_evidence": {
+      "status": "experimentally-demonstrated",
+      "refs": [
+        "L01",
+        "L02"
+      ]
+    },
+    "resistance_association": {
+      "status": "HIGH CONCERN",
+      "mechanism": "enzymatic inactivation resistance gene (tetX2)",
+      "databases": "CARD",
+      "refs": [
+        "L21",
+        "L05"
+      ]
+    },
+    "structure": {
+      "kind": "experimental",
+      "source": "PDB",
+      "id": "2Y6R",
+      "resolution_A": 3.1,
+      "cocrystal_ligand": "7-chlortetracycline",
+      "method": "X-ray diffraction",
+      "file": "structures/tetx2_2Y6R_chainA_FAD.pdb",
+      "label": "EXPERIMENTAL (X-ray, 3.1 A) \u2014 moderate resolution; ligand complex present",
+      "related": "4A6N TetX+tigecycline 2.3 A"
+    },
+    "docking": {
+      "software": "smina/Vina 1.1.2",
+      "substrate": "tetracycline",
+      "top_affinity_kcal_mol": -9.7,
+      "redock_validation": {
+        "ligand": "7-chlortetracycline",
+        "best_mode_rmsd_A": 1.84,
+        "interpretation": "PASS (RMSD <= 3.0 A): protocol reproduces crystallographic pose within tolerance",
+        "method": "element-aware Hungarian assignment + Kabsch, heavy atoms (19 atom pairs); crystal pose has no CONECT records"
+      },
+      "interactions": {
+        "contact_cutoff_A": 4.0,
+        "protein_contacts": [
+          {
+            "residue": "PRO318A",
+            "min_dist_A": 2.74,
+            "is_cofactor": false,
+            "atom": "O"
+          },
+          {
+            "residue": "GLU114A",
+            "min_dist_A": 2.75,
+            "is_cofactor": false,
+            "atom": "OE1"
+          },
+          {
+            "residue": "THR59A",
+            "min_dist_A": 3.04,
+            "is_cofactor": false,
+            "atom": "N"
+          },
+          {
+            "residue": "MET215A",
+            "min_dist_A": 3.13,
+            "is_cofactor": false,
+            "atom": "SD"
+          },
+          {
+            "residue": "HIS234A",
+            "min_dist_A": 3.13,
+            "is_cofactor": false,
+            "atom": "O"
+          },
+          {
+            "residue": "PHE224A",
+            "min_dist_A": 3.15,
+            "is_cofactor": false,
+            "atom": "CD2"
+          },
+          {
+            "residue": "ASP61A",
+            "min_dist_A": 3.16,
+            "is_cofactor": false,
+            "atom": "OD1"
+          },
+          {
+            "residue": "ARG213A",
+            "min_dist_A": 3.26,
+            "is_cofactor": false,
+            "atom": "NH2"
+          },
+          {
+            "residue": "ASN226A",
+            "min_dist_A": 3.44,
+            "is_cofactor": false,
+            "atom": "CB"
+          },
+          {
+            "residue": "GLY321A",
+            "min_dist_A": 3.56,
+            "is_cofactor": false,
+            "atom": "CA"
+          },
+          {
+            "residue": "GLY236A",
+            "min_dist_A": 3.57,
+            "is_cofactor": false,
+            "atom": "N"
+          },
+          {
+            "residue": "ALA225A",
+            "min_dist_A": 3.69,
+            "is_cofactor": false,
+            "atom": "C"
+          },
+          {
+            "residue": "PHE235A",
+            "min_dist_A": 3.7,
+            "is_cofactor": false,
+            "atom": "CA"
+          },
+          {
+            "residue": "GLN192A",
+            "min_dist_A": 3.75,
+            "is_cofactor": false,
+            "atom": "OE1"
+          },
+          {
+            "residue": "PHE319A",
+            "min_dist_A": 3.91,
+            "is_cofactor": false,
+            "atom": "O"
+          }
+        ],
+        "fad_contacts": [
+          {
+            "residue": "FAD1384A",
+            "min_dist_A": 2.36,
+            "is_cofactor": true,
+            "atom": "O4"
+          }
+        ],
+        "n_hbond_plausible": 8,
+        "min_protein_dist_A": 2.74,
+        "min_fad_dist_A": 2.36,
+        "note": "Distance-based contacts from top docked pose; H-bonds inferred heuristically from geometry only."
+      },
+      "note": "DOCKING != PROOF OF CATALYSIS. Computed with apo protein + FAD, box on co-crystal ligand site, seed 42."
+    },
+    "transformation": {
+      "pathway_id": "P1",
+      "type": "C11a hydroxylation + decomposition",
+      "known_vs_predicted": "KNOWN (first step)"
+    },
+    "refs": [
+      "L01",
+      "L02",
+      "L23"
+    ]
+  },
+  {
+    "candidate_id": "TETX3-PA",
+    "protein_name": "Tet(X3) monooxygenase",
+    "gene_name": "tet(X3)",
+    "organism": "Pseudomonas aeruginosa (record); disseminated on plasmids across Acinetobacter/Enterobacterales",
+    "source_environment": "clinical & animal isolates; mobile genetic elements",
+    "accession": {
+      "uniprot": "Q7X2A0"
+    },
+    "sequence_fasta": "data/raw/Q7X2A0.fasta",
+    "enzyme_family": "FAD-dependent monooxygenase (tetracycline destructase)",
+    "cofactors": [
+      "FAD",
+      "NADPH",
+      "O2"
+    ],
+    "annotation": "Plasmid-borne family variant conferring high-level tigecycline resistance; enzymatically inactivates tetracyclines (validated for family; variant-level kinetics reported).",
+    "evidence_level": "E1",
+    "degradation_evidence": {
+      "status": "experimentally-demonstrated (variant function shown; as biocatalyst it degrades tetracyclines)",
+      "refs": [
+        "L03",
+        "L04"
+      ]
+    },
+    "resistance_association": {
+      "status": "HIGH CONCERN",
+      "mechanism": "mobile tigecycline resistance gene \u2014 among the most clinically alarming tetracycline-inactivation determinants",
+      "databases": "CARD",
+      "refs": [
+        "L03",
+        "L21"
+      ]
+    },
+    "structure": {
+      "kind": "predicted-homology",
+      "source": "no direct experimental structure; strong homology to TetX/TetX2 (family)",
+      "file": null,
+      "label": "STRUCTURE UNAVAILABLE in prototype build \u2014 homology context only"
+    },
+    "docking": null,
+    "transformation": {
+      "pathway_id": "P1",
+      "type": "family-inferred C11a hydroxylation",
+      "known_vs_predicted": "KNOWN (family) "
+    },
+    "refs": [
+      "L03",
+      "L04",
+      "L22"
+    ]
+  },
+  {
+    "candidate_id": "LAC-TV",
+    "protein_name": "Laccase-2 (multicopper oxidase)",
+    "gene_name": "LCC2",
+    "organism": "Trametes versicolor (white-rot fungus)",
+    "source_environment": "lignocellulose-degrading fungus; environmental biotechnology workhorse",
+    "accession": {
+      "uniprot": "Q12718",
+      "pdb": "1GYC"
+    },
+    "sequence_fasta": "data/raw/Q12718.fasta",
+    "enzyme_family": "Multicopper oxidase (AA1 family, CAZy)",
+    "cofactors": [
+      "4 Cu (T1, T2/T3 trinuclear)"
+    ],
+    "annotation": "Oxidises broad phenolic/aromatic substrates via single-electron transfer at T1 Cu; eliminates tetracyclines in vitro, substantially enhanced by mediators (e.g. HBT).",
+    "evidence_level": "E2",
+    "degradation_evidence": {
+      "status": "experimentally-demonstrated (in-vitro enzymatic elimination; mediator-enhanced)",
+      "refs": [
+        "L06"
+      ]
+    },
+    "resistance_association": {
+      "status": "LOW CONCERN",
+      "mechanism": "no ARG association detected in analysed reference databases (fungal ligninolytic enzyme, no mobility elements)",
+      "databases": "CARD/NCBI AMRFinder: no hit",
+      "refs": [
+        "L21"
+      ]
+    },
+    "structure": {
+      "kind": "experimental",
+      "source": "PDB",
+      "id": "1GYC",
+      "resolution_A": 1.9,
+      "method": "X-ray",
+      "file": "structures/laccase_1GYC_chainA.pdb",
+      "label": "EXPERIMENTAL (X-ray, 1.9 A)"
+    },
+    "docking": {
+      "software": "smina/Vina 1.1.2",
+      "substrate": "tetracycline (box on T1 Cu)",
+      "top_affinity_kcal_mol": -0.0,
+      "interpretation": "No productive pose found at T1 copper channel under rigid docking (~0 kcal/mol across modes). Honest negative: rigid docking at this cavity does not capture laccase outer-sphere oxidation/mediator-assisted conversion. Docking absence of pose is NOT proof of non-catalysis; E2 evidence stands.",
+      "confidence": "LOW (qualitative only)"
+    },
+    "transformation": {
+      "pathway_id": "P2",
+      "type": "oxidative (single-electron; mediator-assisted)",
+      "known_vs_predicted": "KNOWN removal; products partially characterised"
+    },
+    "refs": [
+      "L06",
+      "L22",
+      "L23"
+    ]
+  },
+  {
+    "candidate_id": "MNP-PC",
+    "protein_name": "Manganese peroxidase 1",
+    "gene_name": "MNP1",
+    "organism": "Phanerochaete (Phanerodontia) chrysosporium (white-rot fungus)",
+    "source_environment": "lignocellulose-degrading fungus",
+    "accession": {
+      "uniprot": "Q02567",
+      "pdb": "1MNP"
+    },
+    "sequence_fasta": "data/raw/Q02567.fasta",
+    "enzyme_family": "Class II heme peroxidase (AA2 family, CAZy)",
+    "cofactors": [
+      "heme",
+      "Mn2+",
+      "H2O2"
+    ],
+    "annotation": "Oxidises Mn2+ to diffusible Mn3+, which oxidises organics remotely; crude MnP degrades tetracycline & oxytetracycline; pathway products reported (demethylation, dimethylamino oxidation, decarbonylation, hydroxylation, oxidative dehydrogenation).",
+    "evidence_level": "E2",
+    "degradation_evidence": {
+      "status": "experimentally-demonstrated (crude MnP; proccess/product analysis)",
+      "refs": [
+        "L07"
+      ]
+    },
+    "resistance_association": {
+      "status": "LOW CONCERN",
+      "mechanism": "no ARG association detected in analysed databases",
+      "databases": "CARD/NCBI AMRFinder: no hit",
+      "refs": [
+        "L21"
+      ]
+    },
+    "structure": {
+      "kind": "experimental",
+      "source": "PDB",
+      "id": "1MNP",
+      "resolution_A": 2.0,
+      "method": "X-ray",
+      "file": "structures/mnp_1MNP_chainA.pdb",
+      "label": "EXPERIMENTAL (X-ray, 2.0 A)"
+    },
+    "docking": {
+      "note": "Docking not mechanistically appropriate: oxidation is mediated by diffusible Mn3+ generated at a small Mn-binding site, not by substrate binding in a pocket. Substrate compatibility assessed from E2 literature instead.",
+      "top_affinity_kcal_mol": null
+    },
+    "transformation": {
+      "pathway_id": "P3",
+      "type": "Mn3+-mediated oxidation cascade",
+      "known_vs_predicted": "KNOWN (multi-product pathway reported)"
+    },
+    "refs": [
+      "L07",
+      "L22",
+      "L23"
+    ]
+  },
+  {
+    "candidate_id": "BSFL-AA12",
+    "protein_name": "BSFL gut metatranscriptome candidate family (laccase-like AA1 / peroxidase AA2 / deacetylase)",
+    "gene_name": "unresolved (metatranscriptomic ORFs)",
+    "organism": "Hermetia illucens gut microbiome",
+    "source_environment": "black soldier fly larval gut under 1250 mg/kg tetracycline",
+    "accession": {
+      "dataset": "Toxics 2023;11:611 (metatranscriptomic annotations; CARD/eggNOG/CAZy based)"
+    },
+    "sequence_fasta": null,
+    "enzyme_family": "AA1/AA2 auxiliary-activity enzymes + deacetylases (family-level only)",
+    "cofactors": [
+      "family-dependent"
+    ],
+    "annotation": "Family-level candidates upregulated under TC pressure; tet(X) NOT detected in BSFL gut; gut flora increases TC degradation rate ~3x (32.2% vs 11.5% germ-free). No individual protein sequence/activity validated yet.",
+    "evidence_level": "E3",
+    "degradation_evidence": {
+      "status": "strong functional-genomics evidence (community level); individual enzymes UNVALIDATED",
+      "refs": [
+        "L08",
+        "L09",
+        "L10"
+      ]
+    },
+    "resistance_association": {
+      "status": "MODERATE CONCERN",
+      "mechanism": "gut community simultaneously enriches efflux (tet(33), tetA, tetB, tetL, tetA(60)) and RPP (tetM, tetW) genes; selection-pressure context; the candidate ORFs themselves are not resistance genes",
+      "databases": "CARD (community profile)",
+      "refs": [
+        "L08",
+        "L10"
+      ]
+    },
+    "structure": {
+      "kind": "unavailable",
+      "label": "STRUCTURE UNAVAILABLE \u2014 no resolved ORF sequence in this prototype build"
+    },
+    "docking": null,
+    "transformation": {
+      "pathway_id": "P4",
+      "type": "multi-route (proposed: oxidation, demethylation, deacetylation)",
+      "known_vs_predicted": "PREDICTED family-level routes"
+    },
+    "refs": [
+      "L08",
+      "L09",
+      "L10",
+      "L13"
+    ]
+  }
+]

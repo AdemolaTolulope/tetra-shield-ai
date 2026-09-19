@@ -1,0 +1,11 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+numpy>=1.26
+scipy>=1.11
+rdkit>=2024.9
+biopython>=1.84
+reportlab>=4.2
+requests>=2.31
+# system/external binaries (not pip):
+#  - smina static build 2019-10-15 (assets/smina) — AutoDock Vina 1.1.2 scoring
+#  - Open Babel (obabel CLI; pip: openbabel-wheel)

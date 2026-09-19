@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TETRA-SHIELD AI — Environmental Biotransformation Intelligence</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 2 56 12v18c0 16-10 26-24 32C18 56 8 46 8 30V12z' fill='%230e2320' stroke='%233adfa9' stroke-width='3'/%3E%3Ccircle cx='32' cy='28' r='9' fill='none' stroke='%233adfa9' stroke-width='3'/%3E%3Cpath d='M32 37v10M25 33l-8 6M39 33l8 6' stroke='%233adfa9' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/styles.css">
+<script src="/static/3dmol.min.js"></script>
+</head>
+<body>
+
+<header id="topbar">
+  <div id="logo">
+    <svg class="mark" viewBox="0 0 64 64"><path d="M32 2 56 12v18c0 16-10 26-24 32C18 56 8 46 8 30V12z" fill="#0e2320" stroke="#3adfa9" stroke-width="3"/><circle cx="32" cy="28" r="9" fill="none" stroke="#3adfa9" stroke-width="3"/><path d="M32 37v10M25 33l-8 6M39 33l8 6" stroke="#3adfa9" stroke-width="3"/></svg>
+    <div>TETRA&#8209;SHIELD&nbsp;AI<small>BIOSHIELD&#8209;X PLATFORM · TETRACYCLINE MODULE</small></div>
+  </div>
+  <span id="modepill">OFFLINE CACHE MODE</span>
+  <nav id="nav"></nav>
+</header>
+
+<main>
+
+<!-- ============================ HOME ============================ -->
+<section class="view" id="v-home">
+  <div class="hero">
+    <div>
+      <div class="kicker">NSBS Innovation Challenge 2026 · Step Out and Innovate</div>
+      <h1>From contaminant <em style="color:var(--acc);font-style:normal">removal</em><br>to biological <em style="color:var(--acc2);font-style:normal">safety</em>.</h1>
+      <div class="sub2">Tetracycline environmental transformation, resistance &amp; hazard intelligence.</div>
+      <p class="sub">An explainable computational decision engine that evaluates whether a biological
+      intervention against antibiotic pollution is plausible, what transformation products result,
+      whether they remain biologically active, what the AMR implications are — and what should be
+      tested in the lab first.</p>
+      <div class="pipeline" id="heroPipe"></div>
+      <div style="display:flex;gap:12px;margin-top:6px">
+        <button class="btn" onclick="startAnalysis()">⟐ ANALYZE CONTAMINANT</button>
+        <button class="btn ghost" onclick="go('v-decision')">Open Decision Engine</button>
+      </div>
+      <div class="distinctions" id="distRow"></div>
+    </div>
+    <div class="panel hi">
+      <h3>Live status</h3>
+      <div id="homeStats" class="skel">loading engine…</div>
+      <div class="viewer" id="heroMol" style="height:300px;margin-top:12px"><span class="tag">TETRACYCLINE · PubChem CID 54675776 · 3D conformer</span></div>
+      <p class="faint" style="margin-top:8px">Rendered client-side (3Dmol.js). Source: PubChem 3D record, retrieved 2026-09-17.</p>
+    </div>
+  </div>
+  <div class="stat-row" id="homeRow"></div>
+  <h3>What this system is — and is not</h3>
+  <div class="grid3" id="homeCards"></div>
+</section>
+
+<!-- ============================ CONTAMINANT ============================ -->
+<section class="view" id="v-contaminant">
+  <h2>Contaminant Intelligence — Tetracycline</h2>
+  <p class="sub">Verified chemical identity &amp; physicochemistry (PubChem, provenance-stamped), plus environmental occurrence evidence with emphasis on Nigeria.</p>
+  <div class="grid2" style="margin-top:14px">
+    <div class="panel hi">
+      <h3>Identity &amp; descriptors</h3>
+      <div id="contamKV" class="kv"></div>
+      <h3>Structural features</h3>
+      <ul class="small" id="contamFeat" style="padding-left:18px"></ul>
+      <h3>Provenance</h3>
+      <div id="contamProv" class="small"></div>
+    </div>
+    <div>
+      <div class="panel">
+        <h3>2D structure (RDKit, from PubChem SMILES)</h3>
+        <img src="/static/mol/tetracycline.svg" style="width:100%;background:#fff;border-radius:10px" alt="tetracycline 2D">
+      </div>
+      <div class="panel" style="margin-top:14px">
+        <h3>3D conformer</h3>
+        <div class="viewer" id="contamMol" style="height:320px"><span class="tag">PubChem 3D SDF · stick model</span></div>
+      </div>
+    </div>
+  </div>
+  <h3>Environmental occurrence records (Nigeria focus)</h3>
+  <div class="panel">
+    <p class="small">No record is generalised beyond its sampling site. Evidence level shown per record.</p>
+    <table class="tb" id="occTable"></table>
+  </div>
+  <div class="grid2" style="margin-top:14px">
+    <div class="panel">
+      <h3>Schematic geographic context</h3>
+      <svg viewBox="0 0 520 360" style="width:100%;background:#081715;border-radius:10px;border:1px solid var(--line)" id="nigeriaMap"></svg>
+      <p class="faint">Schematic outline (not survey-accurate). Lagos region occurrence sites marked.</p>
+    </div>
+    <div class="panel">
+      <h3>Sources &amp; pathways into Nigerian waters</h3>
+      <div id="srcPaths"></div>
+      <div class="note green"><b>One Health frame:</b> <span id="oneHealth"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ DISCOVER ============================ -->
+<section class="view" id="v-discover">
+  <h2>Candidate Discovery — Biocatalyst Ranked Evidence</h2>
+  <p class="sub">Every candidate carries an evidence class (E1–E5), an AMR screening status and an inspectable score.
+  Click a card to open structural &amp; decision detail.</p>
+  <div class="preset-row" id="discPreset"></div>
+  <div class="cand-grid" id="candGrid" style="margin-top:14px"></div>
+  <div class="note blue" style="margin-top:18px"><b>Discovery resources used:</b> UniProtKB, NCBI/RCSB PDB, AlphaFold DB,
+  CARD (AMR context), peer-reviewed literature incl. 2025 black-soldier-fly gut-microbiome work.
+  Sequence similarity is never treated as functional proof.</div>
+</section>
+
+<!-- ============================ CANDIDATE DETAIL ============================ -->
+<section class="view" id="v-candidate">
+  <div id="candDetail"></div>
+</section>
+
+<!-- ============================ SAFETY ============================ -->
+<section class="view" id="v-safety">
+  <h2>Transformation &amp; Product Safety Intelligence</h2>
+  <div class="note red"><b>CORE DOCTRINE:</b> REMOVAL ≠ DEGRADATION ≠ DETOXIFICATION. A contaminant can disappear
+  from analytical measurements while biologically active transformation products remain. This engine tracks the products.</div>
+  <div id="pathwayZone"></div>
+  <h3>Transformation products &amp; residual antibacterial activity</h3>
+  <div class="grid2" id="productCards"></div>
+  <h3>Cheminformatics triage (deterministic similarity — not a tox model)</h3>
+  <div class="panel" id="chemTriage"></div>
+</section>
+
+<!-- ============================ AMR ============================ -->
+<section class="view" id="v-amr">
+  <h2>AMR SHIELD — Resistance Intelligence</h2>
+  <p class="sub">Computational screening categories only (LOW / MODERATE / HIGH CONCERN / UNKNOWN) — never clinical or regulatory determinations. “No detected association” ≠ “AMR-free”.</p>
+  <div class="distinctions"><span class="d" style="background:linear-gradient(90deg,#f49f5a,#f06d6d)">ANTIBIOTIC SELECTION PRESSURE IS A SYSTEM PROPERTY</span></div>
+  <div class="grid2">
+    <div class="panel hi"><h3>Resistance mechanism landscape (tetracyclines)</h3><div id="amrMech"></div></div>
+    <div class="panel"><h3>Per-candidate AMR screening</h3><div id="amrCand"></div></div>
+  </div>
+  <div class="grid2" style="margin-top:14px">
+    <div class="panel"><h3>The AMR–environment link (One Health)</h3><div id="amrOneHealth" class="small"></div></div>
+    <div class="panel"><h3>Selection context</h3><div id="amrCtx" class="small"></div></div>
+  </div>
+</section>
+
+<!-- ============================ CIRCULAR ============================ -->
+<section class="view" id="v-circular">
+  <h2>Circular Bioremediation — Cassava Agro-Waste Layer</h2>
+  <p class="sub">Nigerian agricultural waste → low-cost material → <b>adsorption / pre-concentration</b> → biological transformation → safety check. Adsorption is modelled honestly: it moves the contaminant, it does not destroy it.</p>
+  <div class="tflow" id="cassavaFlow"></div>
+  <div class="grid3" id="cassavaEvidence"></div>
+  <div class="grid2" style="margin-top:14px">
+    <div class="panel"><h3>Critical distinctions (built into the product)</h3><div id="cassDist"></div></div>
+    <div class="panel"><h3>Spent adsorbent — end-of-life</h3><div id="cassSpent"></div></div>
+  </div>
+  <h3>Intervention architecture — compared honestly</h3>
+  <table class="tb" id="intervTable"></table>
+</section>
+
+<!-- ============================ DECISION ============================ -->
+<section class="view" id="v-decision">
+  <h2>Decision Engine — TETRA-SHIELD PRIORITY SCORE</h2>
+  <div class="note"><b>Honesty contract:</b> the Priority Score is a <i>computational prioritisation framework</i> —
+  not a validated clinical, regulatory, toxicological or environmental risk score. Every component is inspectable;
+  every weight is adjustable; stability is measured, not assumed.</div>
+  <div class="panel hi">
+    <h3>WHAT-IF engine — choose a stance or drag the weights</h3>
+    <div class="preset-row" id="presetRow"></div>
+    <div class="grid2" id="sliders"></div>
+  </div>
+  <h3>Ranking</h3>
+  <div class="panel" id="rankPanel"></div>
+  <div class="panel" id="whyPanel" style="margin-top:14px;display:none"></div>
+  <h3>Robustness — sensitivity analysis &amp; ablation &amp; baselines</h3>
+  <div class="grid3">
+    <div class="panel"><h3>Sensitivity (400 random weight sets, ±25%)</h3><div id="sensPanel" class="skel">computing…</div></div>
+    <div class="panel"><h3>Ablation study</h3><div id="ablPanel" class="skel">computing…</div></div>
+    <div class="panel"><h3>Baseline comparison</h3><div id="basePanel" class="skel">computing…</div></div>
+  </div>
+</section>
+
+<!-- ============================ COMPARE ============================ -->
+<section class="view" id="v-compare">
+  <h2>Candidate Comparison</h2>
+  <p class="sub">Pick 2–4 candidates for a side-by-side evidence comparison.</p>
+  <div class="selrow" id="cmpSel"></div>
+  <div id="cmpOut"></div>
+</section>
+
+<!-- ============================ RESULTS / REPORT ============================ -->
+<section class="view" id="v-report">
+  <h2>Results &amp; Report Export</h2>
+  <p class="sub">Select candidate + stance. Export JSON / CSV / PDF with full sources and disclaimers.</p>
+  <div class="selrow" id="repSel"></div>
+  <div class="selrow" id="repPreset"></div>
+  <div style="display:flex;gap:10px;margin:8px 0 18px">
+    <button class="btn sm" onclick="exportReport('pdf')">⤓ PDF</button>
+    <button class="btn sm ghost" onclick="exportReport('csv')">⤓ CSV</button>
+    <button class="btn sm ghost" onclick="exportReport('json')">⤓ JSON</button>
+  </div>
+  <div id="reportPreview"></div>
+</section>
+
+<!-- ============================ ABOUT ============================ -->
+<section class="view" id="v-about">
+  <h2>About, Methods &amp; Scientific Honesty</h2>
+  <div class="grid2">
+    <div class="panel hi">
+      <h3>Platform &amp; name</h3>
+      <p class="small"><b>BioShield-X</b> = the Environmental BioAI decision platform (contaminant X is a
+      variable). <b>TETRA-SHIELD</b> is the first fully implemented module (tetracycline).
+      Naming analysis in <span class="mono">docs/NAMING.md</span> — the name was retained because the
+      expansion is meaningful (Tetracycline Environmental Transformation, Resistance &amp; Safety Hazard
+      Intelligence Engine), not because it sounds impressive.</p>
+      <h3>Where computation actually runs</h3>
+      <ul class="small" style="padding-left:18px">
+        <li><b>Molecular docking:</b> smina (AutoDock Vina 1.1.2 scoring), executed in this repo at build time; protocol validated by re-docking the co-crystallised ligand (RMSD 1.84 Å).</li>
+        <li><b>Cheminformatics:</b> RDKit descriptors, Morgan-fingerprint Tanimoto, structural-alert SMARTS.</li>
+        <li><b>Sequence analysis:</b> Biopython global alignments (identity %).</li>
+        <li><b>Decision engine:</b> deterministic evidence-integration scoring (ML deliberately <i>not</i> fitted on n=6 evidence-graded candidates — see MODEL_CARD).</li>
+        <li><b>Sensitivity:</b> Monte-Carlo weight perturbation (400 sets) + Kendall's W rank concordance.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Scientific distinctions (product identity)</h3>
+      <div id="aboutDist" class="distinctions" style="flex-direction:column;align-items:flex-start"></div>
+      <h3>Provenance disciplines</h3>
+      <p class="small">Every record carries SOURCE · ACCESSION/DOI · RETRIEVAL DATE · EVIDENCE CLASS.
+      See <span class="mono">data_manifest.csv</span>, <span class="mono">provenance.json</span>,
+      <span class="mono">docs/*</span> in the repository.</p>
+      <h3>Limitations (read before citing)</h3>
+      <ul class="small" style="padding-left:18px">
+        <li>6 candidates, 1 contaminant — a first module, not a coverage claim.</li>
+        <li>Component scores are documented heuristics tuned to the literature, not fitted parameters.</li>
+        <li>Product toxicity evidence is sparse by nature of the field — rendered as UNKNOWN, not "safe".</li>
+        <li>Nigerian occurrence data = point studies; no national generalisation.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  TETRA-SHIELD AI · BioShield-X platform · prototype for NSBS Innovation Challenge 2026 ·
+  Offline cache mode — all data provenance-tracked · Priority Score = computational prioritisation, not a risk score.
+</footer>
+
+<div id="analyzeOverlay"><div id="analyzeCard">
+  <h2 style="margin-bottom:2px">Live Analysis — Tetracycline</h2>
+  <p class="small" id="anSub">Running the full intelligence chain on cached, verified data…</p>
+  <div id="anSteps" style="margin:14px 0"></div>
+  <div style="display:flex;gap:10px"><button class="btn sm" id="anDone" style="display:none" onclick="doneAnalysis()">Open Decision Engine →</button>
+  <button class="btn sm ghost" onclick="document.getElementById('analyzeOverlay').classList.remove('show')">close</button></div>
+</div></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

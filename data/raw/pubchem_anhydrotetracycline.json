@@ -1,0 +1,17 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 54675758,
+        "MolecularFormula": "C22H22N2O7",
+        "MolecularWeight": "426.4",
+        "SMILES": "CC1=C2C=CC=C(C2=C(C3=C1C[C@H]4[C@@H](C(=O)C(=C([C@]4(C3=O)O)O)C(=O)N)N(C)C)O)O",
+        "ConnectivitySMILES": "CC1=C2C=CC=C(C2=C(C3=C1CC4C(C(=O)C(=C(C4(C3=O)O)O)C(=O)N)N(C)C)O)O",
+        "InChIKey": "KTTKGQINVKPHLY-DOCRCCHOSA-N",
+        "XLogP": 2.4,
+        "TPSA": 161,
+        "Title": "Anhydrotetracycline"
+      }
+    ]
+  }
+}

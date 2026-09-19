@@ -1,0 +1,70 @@
+{
+  "occurrence_records": [
+    {
+      "location": "Lagos (multiple sites incl. Amuwo-Odofin)",
+      "country": "Nigeria",
+      "matrix": "surface water (wastewater-impacted)",
+      "contaminant": "tetracycline-class (chlortetracycline <0.05 ug/L; 12/37 pharmaceuticals detected, up to 8.84 ug/L for other compounds)",
+      "concentration": "<0.05 ug/L (chlortetracycline); class-level signal",
+      "year": 2016,
+      "study": "Olarinmoye et al. 2016",
+      "ref": "L11",
+      "evidence": "E2(field)",
+      "lat": 6.4654,
+      "lon": 3.4064
+    },
+    {
+      "location": "Ijaiye + second hospital WWTP, Lagos",
+      "country": "Nigeria",
+      "matrix": "sewage sludge",
+      "contaminant": "tetracycline",
+      "concentration": "up to 310.2 ng/g",
+      "year": 2022,
+      "study": "Ajibola & Zwiener 2022",
+      "ref": "L12",
+      "evidence": "E2(field)",
+      "lat": 6.6164,
+      "lon": 3.346,
+      "note": "100% detection frequency in secondary sludge; risk quotient assessed for land application"
+    },
+    {
+      "location": "Lagos marine environment",
+      "country": "Nigeria",
+      "matrix": "marine water (microbiology)",
+      "contaminant": "tetracycline resistance phenotype + tetA/tetB/tetM context",
+      "concentration": "n/a (qualitative isolate study)",
+      "year": 2025,
+      "study": "Brieflands JKUMS 2025",
+      "ref": "L20",
+      "evidence": "E2(field)",
+      "lat": 6.431,
+      "lon": 3.42
+    },
+    {
+      "location": "Kenya/Uganda surface waters (regional context)",
+      "country": "East Africa (reference)",
+      "matrix": "surface water",
+      "contaminant": "tetracyclines",
+      "concentration": "ng/L\u2013ug/L ranges reported across African monitoring studies",
+      "year": 2016,
+      "study": "comparative datasets compiled in Olarinmoye 2016 discussion",
+      "ref": "L11",
+      "evidence": "review-sourced",
+      "lat": null,
+      "lon": null
+    }
+  ],
+  "sources_pathways": [
+    "hospital effluent",
+    "municipal wastewater (limited treatment)",
+    "pharmaceutical manufacturing discharge",
+    "aquaculture & livestock runoff (veterinary TC/OTC use)",
+    "sludge land application"
+  ],
+  "one_health": {
+    "human": "clinical use + hospital effluent; carbapenem-era pressure to preserve last-resort tetracyclines (tigecycline)",
+    "animal": "veterinary tetracyclines among most-used livestock antibiotics; aquaculture use in Nigeria reported",
+    "environment": "sub-inhibitory ng\u2013ug/L levels maintain selection pressure; sludge application recycles residues to soils (L12, L19)"
+  },
+  "persistence_summary": "Generally low\u2013moderate aqueous persistence (photolysis, hydrolysis, epimerisation); persists when sorbed to sediments/sludge (strong sorption to clay/organic matter and multivalent cations)."
+}

@@ -1,0 +1,54 @@
+{
+  "role": "PRETREATMENT / ADSORPTION LAYER + support material \u2014 explicitly NOT degradation",
+  "nigeria_context": "Nigeria is the world's largest cassava producer (~60 Mt/yr; FAO); peels and ethanol-processing sludge are abundant low-value waste streams.",
+  "evidence": [
+    {
+      "material": "cassava ethanol-sludge biochar (NaHCO3-activated)",
+      "contaminant": "tetracycline (DIRECT evidence)",
+      "function": "ADSORPTION (mass transfer water->solid)",
+      "performance": "Qmax 154.45 mg/g (activated) vs 34.04 mg/g (raw); ~92.6% removal at pH 3 in batch",
+      "mechanisms": [
+        "electrostatic attraction",
+        "hydrogen bonding",
+        "pi-pi interactions",
+        "pore filling"
+      ],
+      "ref": "L14",
+      "evidence": "E2 (batch-scale, synthetic solution)"
+    },
+    {
+      "material": "cassava peel-derived biochar (CP500/CP700)",
+      "contaminant": "ciprofloxacin (NOT tetracycline)",
+      "function": "ADSORPTION",
+      "performance": "effective across pH 3\u201310 in lab conditions",
+      "ref": "L15",
+      "note": "Included to demonstrate the adsorbent principle for the PEEL stream; must not be represented as tetracycline degradation evidence."
+    },
+    {
+      "material": "agricultural-waste biochars (general)",
+      "contaminant": "tetracycline",
+      "function": "ADSORPTION",
+      "ref": "L16"
+    }
+  ],
+  "critical_distinctions": {
+    "adsorption": "transfers/concentrates contaminant from water to solid; molecule NOT destroyed",
+    "degradation": "chemical transformation of the molecule (enzymatic/abiotic)",
+    "detoxification": "demonstrated loss of biological hazard (requires product + bioactivity evidence)"
+  },
+  "spent_adsorbent": {
+    "issue": "TC-laden biochar is now hazardous solid waste / potential secondary source",
+    "options": [
+      "thermal regeneration/incineration (energy cost; destroys sorbent)",
+      "coupling to enzymatic/microbial degradation of desorbed concentrate (TETRA-SHIELD architecture Option C)",
+      "stabilisation in construction materials (mobilisation risk must be assessed)"
+    ],
+    "design_principle": "Never claim 'treatment' for adsorption alone; the solid phase must have a managed end-of-life."
+  },
+  "circularity_score_inputs": {
+    "feedstock_cost_class": "low (waste stream)",
+    "activation_cost_class": "moderate (chemical activation) / low (pyrolysis only)",
+    "local_availability": "high (Nigeria)",
+    "evidence_class_for_TC": "adsorption-only (E2 batch)"
+  }
+}

@@ -1,0 +1,13 @@
+name: tetra-shield
+channels: [conda-forge, defaults]
+dependencies:
+  - python=3.13
+  - fastapi
+  - uvicorn
+  - numpy
+  - scipy
+  - rdkit
+  - biopython
+  - reportlab
+  - openbabel
+  - pip

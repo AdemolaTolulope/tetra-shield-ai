@@ -1,0 +1,59 @@
+{
+  "method": "RDKit 2025.x Morgan FP r2/2048 Tanimoto; alert SMARTS matched where parseable",
+  "caveat": "Fingerprint similarity + structural alerts are deterministic triage, NOT a validated tox model.",
+  "parent_similarity_tanimoto": {
+    "4-epitetracycline": 1.0,
+    "anhydrotetracycline": 0.534
+  },
+  "compounds": {
+    "tetracycline": {
+      "smiles": "C[C@@]1([C@H]2C[C@H]3[C@@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O",
+      "label": "Tetracycline (parent)",
+      "mw": 444.44,
+      "logp_rdkit": -0.37,
+      "tpsa": 181.6,
+      "rings": 4,
+      "alerts": {
+        "alpha_diketone_C11_C12 chelator": false,
+        "phenolic_OH (A-ring)": true,
+        "dimethylamino_C4": true,
+        "carboxamide_C2": true,
+        "enol_OH": true
+      }
+    },
+    "4-epitetracycline": {
+      "smiles": "C[C@@]1([C@H]2C[C@H]3[C@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O",
+      "label": "4-Epitetracycline (abiotic product)",
+      "mw": 444.44,
+      "logp_rdkit": -0.37,
+      "tpsa": 181.6,
+      "rings": 4,
+      "alerts": {
+        "alpha_diketone_C11_C12 chelator": false,
+        "phenolic_OH (A-ring)": true,
+        "dimethylamino_C4": true,
+        "carboxamide_C2": true,
+        "enol_OH": true
+      }
+    },
+    "anhydrotetracycline": {
+      "smiles": "CC1=C2C=CC=C(C2=C(C3=C1C[C@H]4[C@@H](C(=O)C(=C([C@]4(C3=O)O)O)C(=O)N)N(C)C)O)O",
+      "label": "Anhydrotetracycline (abiotic product)",
+      "mw": 426.43,
+      "logp_rdkit": 0.46,
+      "tpsa": 161.4,
+      "rings": 4,
+      "alerts": {
+        "alpha_diketone_C11_C12 chelator": false,
+        "phenolic_OH (A-ring)": true,
+        "dimethylamino_C4": true,
+        "carboxamide_C2": true,
+        "enol_OH": true
+      }
+    }
+  },
+  "interpretation": {
+    "4-epitetracycline": "Tanimoto 1.0 \u2014 near-identical scaffold incl. chelation pharmacophore => residual antibacterial activity plausible (matches literature).",
+    "anhydrotetracycline": "Tanimoto 0.534 \u2014 ring system retained but C6 dehydration aromatises C-ring => altered activity + Tet(X)-inhibitor behaviour (literature)."
+  }
+}

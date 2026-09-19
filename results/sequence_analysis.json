@@ -1,0 +1,82 @@
+{
+  "method": "Biopython PairwiseAligner, global, match=1 mismatch=0, gap -0.5/-0.1; identity% = score/max_len",
+  "caveat": "Sequence similarity is NOT functional proof; family members vary in activity (e.g., inactive Tet(X1)).",
+  "sequences": {
+    "TetX (B. fragilis)": {
+      "length": 388,
+      "mw_da": 43724.2,
+      "pI": 5.26,
+      "gravy": -0.438,
+      "aromaticity": 0.082
+    },
+    "TetX2 (B. thetaiotaomicron)": {
+      "length": 388,
+      "mw_da": 43707.1,
+      "pI": 5.13,
+      "gravy": -0.431,
+      "aromaticity": 0.082
+    },
+    "Tet(X3) (P. aeruginosa)": {
+      "length": 378,
+      "mw_da": 42758.1,
+      "pI": 5.25,
+      "gravy": -0.374,
+      "aromaticity": 0.087
+    },
+    "MnP1 (P. chrysosporium)": {
+      "length": 378,
+      "mw_da": 39556.3,
+      "pI": 4.78,
+      "gravy": 0.065,
+      "aromaticity": 0.069
+    },
+    "Laccase-2 (T. versicolor)": {
+      "length": 519,
+      "mw_da": 55810.2,
+      "pI": 5.94,
+      "gravy": 0.046,
+      "aromaticity": 0.104
+    }
+  },
+  "identity_percent_matrix": {
+    "TetX (B. fragilis)": {
+      "TetX (B. fragilis)": 100.0,
+      "TetX2 (B. thetaiotaomicron)": 99.5,
+      "Tet(X3) (P. aeruginosa)": 82.1,
+      "MnP1 (P. chrysosporium)": 20.8,
+      "Laccase-2 (T. versicolor)": 17.8
+    },
+    "TetX2 (B. thetaiotaomicron)": {
+      "TetX (B. fragilis)": 99.5,
+      "TetX2 (B. thetaiotaomicron)": 100.0,
+      "Tet(X3) (P. aeruginosa)": 82.4,
+      "MnP1 (P. chrysosporium)": 20.8,
+      "Laccase-2 (T. versicolor)": 17.8
+    },
+    "Tet(X3) (P. aeruginosa)": {
+      "TetX (B. fragilis)": 82.1,
+      "TetX2 (B. thetaiotaomicron)": 82.4,
+      "Tet(X3) (P. aeruginosa)": 100.0,
+      "MnP1 (P. chrysosporium)": 20.7,
+      "Laccase-2 (T. versicolor)": 17.4
+    },
+    "MnP1 (P. chrysosporium)": {
+      "TetX (B. fragilis)": 20.8,
+      "TetX2 (B. thetaiotaomicron)": 20.8,
+      "Tet(X3) (P. aeruginosa)": 20.7,
+      "MnP1 (P. chrysosporium)": 100.0,
+      "Laccase-2 (T. versicolor)": 19.4
+    },
+    "Laccase-2 (T. versicolor)": {
+      "TetX (B. fragilis)": 17.8,
+      "TetX2 (B. thetaiotaomicron)": 17.8,
+      "Tet(X3) (P. aeruginosa)": 17.4,
+      "MnP1 (P. chrysosporium)": 19.4,
+      "Laccase-2 (T. versicolor)": 100.0
+    }
+  },
+  "interpretation_notes": [
+    "TetX/TetX2/Tet(X3) cluster = tetracycline-destructase family (FAD-monooxygenases).",
+    "Fungal MnP1 and laccase are sequence-unrelated \u2014 independent oxidative solutions to the same contaminant."
+  ]
+}

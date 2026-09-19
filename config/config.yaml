@@ -1,0 +1,5 @@
+app: {name: TETRA-SHIELD AI, version: 1.0.0, mode: offline-cache, port: 8000}
+engine: {seed_sensitivity: 7, montecarlo_n: 400, weight_spread: 0.25}
+docking: {engine: smina, scoring: vina_1.1.2, seed: 42, exhaustiveness: 16, box_A: 20}
+data: {retrieval_date: '2026-09-17', manifest: ../data_manifest.csv}
+policy: {missing_data: 'UNKNOWN / Data unavailable (never fabricate)'}

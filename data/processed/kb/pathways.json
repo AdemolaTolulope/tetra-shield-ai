@@ -1,0 +1,106 @@
+[
+  {
+    "pathway_id": "P1",
+    "name": "TetX-family C11a hydroxylation + non-enzymatic decomposition",
+    "steps": [
+      {
+        "step": 1,
+        "reaction": "tetracycline + O2 + NADPH -> 11a-hydroxytetracycline (hemiketal)",
+        "enzyme": "TetX/TetX2/Tet(X3)",
+        "cofactor": "FAD",
+        "type": "monooxygenation",
+        "known": true,
+        "ref": "L01"
+      },
+      {
+        "step": 2,
+        "reaction": "11a-OH-tetracycline -> non-enzymatic decomposition products (multiple, incompletely characterised)",
+        "enzyme": null,
+        "type": "spontaneous",
+        "known": "partially",
+        "ref": "L01,L05"
+      }
+    ],
+    "product_ids": [
+      "TP-11OH"
+    ],
+    "residual_activity_summary": "downstream products: antibacterial activity lost (functional evidence)"
+  },
+  {
+    "pathway_id": "P2",
+    "name": "Laccase oxidative elimination (mediator-assisted)",
+    "steps": [
+      {
+        "step": 1,
+        "reaction": "tetracycline -> oxidised product group (radical-mediated)",
+        "enzyme": "laccase-2",
+        "cofactor": "Cu/O2 (+HBT mediator)",
+        "type": "single-electron oxidation",
+        "known": true,
+        "ref": "L06"
+      }
+    ],
+    "product_ids": [
+      "TP-OX"
+    ],
+    "residual_activity_summary": "reported activity reduction; product-level data limited"
+  },
+  {
+    "pathway_id": "P3",
+    "name": "MnP / Mn3+ oxidative cascade",
+    "steps": [
+      {
+        "step": 1,
+        "reaction": "Mn2+ -> Mn3+ (heme peroxidase, H2O2)",
+        "enzyme": "MnP1",
+        "type": "peroxidation",
+        "known": true,
+        "ref": "L07"
+      },
+      {
+        "step": 2,
+        "reaction": "tetracycline -> demethylation; dimethylamino oxidation; decarbonylation; hydroxylation; oxidative dehydrogenation (7 products reported)",
+        "enzyme": "Mn3+ (diffusible)",
+        "type": "oxidation cascade",
+        "known": true,
+        "ref": "L07"
+      }
+    ],
+    "product_ids": [
+      "TP-OX"
+    ],
+    "residual_activity_summary": "reported antimicrobial reduction (assay-dependent)"
+  },
+  {
+    "pathway_id": "P4",
+    "name": "Abiotic transformation matrix (context for ANY 'removal' claim)",
+    "steps": [
+      {
+        "step": 1,
+        "reaction": "tetracycline <-> 4-epitetracycline",
+        "type": "epimerisation (equilibrium)",
+        "known": true,
+        "ref": "L18"
+      },
+      {
+        "step": 2,
+        "reaction": "tetracycline -> anhydrotetracycline (acidic)",
+        "type": "dehydration",
+        "known": true,
+        "ref": "L18"
+      },
+      {
+        "step": 3,
+        "reaction": "tetracycline -> photolysis/hydrolysis products",
+        "type": "photochemical",
+        "known": "partially",
+        "ref": "L17"
+      }
+    ],
+    "product_ids": [
+      "TP-EPI",
+      "TP-ANHYDRO"
+    ],
+    "residual_activity_summary": "KEY LESSON: 'disappearance' of parent via abiotic routes can yield ACTIVE (epimer) or CONCERNING (anhydro) products \u2014 removal != detoxification"
+  }
+]

@@ -1,0 +1,310 @@
+{
+  "created_utc": "2026-09-17T17:28:13.720557+00:00",
+  "software": "smina (AutoDock Vina 1.1.2 scoring), static build 2019-10-15",
+  "seed": 42,
+  "exhaustiveness": 16,
+  "box": {
+    "center": [
+      -0.31,
+      8.5,
+      21.49
+    ],
+    "size": [
+      20,
+      20,
+      20
+    ]
+  },
+  "receptor": {
+    "pdb": "2Y6R",
+    "chain": "A",
+    "cofactor": "FAD retained",
+    "note": "apo protein + FAD; co-crystallised CTC removed before docking"
+  },
+  "runs": {
+    "tetracycline": {
+      "modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -9.7,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -7.6,
+          "rmsd_lb": 4.11,
+          "rmsd_ub": 6.566
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -7.0,
+          "rmsd_lb": 6.69,
+          "rmsd_ub": 9.635
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -6.8,
+          "rmsd_lb": 5.24,
+          "rmsd_ub": 8.581
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -6.7,
+          "rmsd_lb": 5.441,
+          "rmsd_ub": 9.183
+        }
+      ]
+    },
+    "chlortetracycline": {
+      "modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -9.2,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -7.4,
+          "rmsd_lb": 4.756,
+          "rmsd_ub": 7.4
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -7.1,
+          "rmsd_lb": 6.492,
+          "rmsd_ub": 9.423
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -7.0,
+          "rmsd_lb": 5.232,
+          "rmsd_ub": 8.434
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -6.6,
+          "rmsd_lb": 5.995,
+          "rmsd_ub": 10.076
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.5,
+          "rmsd_lb": 7.099,
+          "rmsd_ub": 9.376
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -6.4,
+          "rmsd_lb": 6.484,
+          "rmsd_ub": 9.251
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -6.4,
+          "rmsd_lb": 5.421,
+          "rmsd_ub": 9.061
+        }
+      ]
+    },
+    "laccase_1GYC_tetracycline": {
+      "modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -0.0,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -0.0,
+          "rmsd_lb": 4.112,
+          "rmsd_ub": 6.355
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": 0.0,
+          "rmsd_lb": 7.01,
+          "rmsd_ub": 9.995
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": 0.0,
+          "rmsd_lb": 5.455,
+          "rmsd_ub": 8.308
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": 0.0,
+          "rmsd_lb": 5.331,
+          "rmsd_ub": 7.149
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": 0.0,
+          "rmsd_lb": 3.588,
+          "rmsd_ub": 7.188
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": 0.0,
+          "rmsd_lb": 4.604,
+          "rmsd_ub": 9.149
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": 0.0,
+          "rmsd_lb": 3.294,
+          "rmsd_ub": 6.114
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": 0.0,
+          "rmsd_lb": 5.197,
+          "rmsd_ub": 7.33
+        }
+      ],
+      "receptor": {
+        "pdb": "1GYC",
+        "chain": "A",
+        "cofactor": "4 Cu retained"
+      },
+      "box": {
+        "center": [
+          14.471,
+          18.98,
+          38.925
+        ],
+        "size": [
+          18,
+          18,
+          18
+        ]
+      },
+      "note": "Box centred on T1 copper (substrate oxidation site). Laccase acts by single-electron oxidation; docking indicates pocket access only, NOT catalysis."
+    }
+  },
+  "redock_validation": {
+    "ligand": "7-chlortetracycline",
+    "best_mode_rmsd_A": 1.84,
+    "interpretation": "PASS (RMSD <= 3.0 A): protocol reproduces crystallographic pose within tolerance",
+    "method": "element-aware Hungarian assignment + Kabsch, heavy atoms (19 atom pairs); crystal pose has no CONECT records"
+  },
+  "tetracycline_interactions": {
+    "contact_cutoff_A": 4.0,
+    "protein_contacts": [
+      {
+        "residue": "PRO318A",
+        "min_dist_A": 2.74,
+        "is_cofactor": false,
+        "atom": "O"
+      },
+      {
+        "residue": "GLU114A",
+        "min_dist_A": 2.75,
+        "is_cofactor": false,
+        "atom": "OE1"
+      },
+      {
+        "residue": "THR59A",
+        "min_dist_A": 3.04,
+        "is_cofactor": false,
+        "atom": "N"
+      },
+      {
+        "residue": "MET215A",
+        "min_dist_A": 3.13,
+        "is_cofactor": false,
+        "atom": "SD"
+      },
+      {
+        "residue": "HIS234A",
+        "min_dist_A": 3.13,
+        "is_cofactor": false,
+        "atom": "O"
+      },
+      {
+        "residue": "PHE224A",
+        "min_dist_A": 3.15,
+        "is_cofactor": false,
+        "atom": "CD2"
+      },
+      {
+        "residue": "ASP61A",
+        "min_dist_A": 3.16,
+        "is_cofactor": false,
+        "atom": "OD1"
+      },
+      {
+        "residue": "ARG213A",
+        "min_dist_A": 3.26,
+        "is_cofactor": false,
+        "atom": "NH2"
+      },
+      {
+        "residue": "ASN226A",
+        "min_dist_A": 3.44,
+        "is_cofactor": false,
+        "atom": "CB"
+      },
+      {
+        "residue": "GLY321A",
+        "min_dist_A": 3.56,
+        "is_cofactor": false,
+        "atom": "CA"
+      },
+      {
+        "residue": "GLY236A",
+        "min_dist_A": 3.57,
+        "is_cofactor": false,
+        "atom": "N"
+      },
+      {
+        "residue": "ALA225A",
+        "min_dist_A": 3.69,
+        "is_cofactor": false,
+        "atom": "C"
+      },
+      {
+        "residue": "PHE235A",
+        "min_dist_A": 3.7,
+        "is_cofactor": false,
+        "atom": "CA"
+      },
+      {
+        "residue": "GLN192A",
+        "min_dist_A": 3.75,
+        "is_cofactor": false,
+        "atom": "OE1"
+      },
+      {
+        "residue": "PHE319A",
+        "min_dist_A": 3.91,
+        "is_cofactor": false,
+        "atom": "O"
+      }
+    ],
+    "fad_contacts": [
+      {
+        "residue": "FAD1384A",
+        "min_dist_A": 2.36,
+        "is_cofactor": true,
+        "atom": "O4"
+      }
+    ],
+    "n_hbond_plausible": 8,
+    "min_protein_dist_A": 2.74,
+    "min_fad_dist_A": 2.36,
+    "note": "Distance-based contacts from top docked pose; H-bonds inferred heuristically from geometry only."
+  },
+  "literature_residue_crossref": {
+    "source": "Volkers et al. 2011 JMB 416(5):2212-25; He et al. 2019 Nat Microbiol 4:1065; Yang et al. 2004 JBC 279:52346",
+    "reported_key_residues": [
+      "FAD-binding: R213, D303 (TetX2 numbering)",
+      "Family-level Tet(X4): H231, M372 (substrate); E43, R114, D308 (FAD)",
+      "Hydrophobic substrate pocket incl. Phe residues (F319 region)"
+    ],
+    "note": "Numbering differs between orthologs; used only as qualitative cross-check."
+  }
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "product_id": "TP-11OH",
+    "name": "11a-hydroxytetracycline (enzymatic primary product; transient)",
+    "parent": "tetracycline",
+    "route": "TetX-family C11a hydroxylation (FAD/NADPH/O2)",
+    "structure_status": "STRUCTURE UNCERTAIN \u2014 transient hemiketal; decomposes non-enzymatically to poorly characterized downstream products (L01, L05)",
+    "smiles": null,
+    "formula_est": "C22H24N2O9 (+O vs parent)",
+    "mw_est": 460.4,
+    "known_vs_predicted": "KNOWN reaction / characterisation incomplete",
+    "residual_activity": {
+      "class": "activity loss demonstrated (downstream products; functional resistance literature)",
+      "evidence": "literature-supported",
+      "refs": [
+        "L01",
+        "L05"
+      ],
+      "detail": "Hydroxylation disrupts C11-C12 beta-diketone Mg-chelating pharmacophore required for ribosome binding; downstream products inactive (Yang 2004)."
+    },
+    "safety_triage": {
+      "toxicity_data": "no dedicated tox dataset located",
+      "ecotoxicity": "unknown",
+      "persistence": "expected LOW (chemically unstable)",
+      "class": "LOW-EVIDENCE \u2014 absence of tox data != safe; flagged for follow-up LC-MS product work",
+      "refs": [
+        "L01"
+      ]
+    }
+  },
+  {
+    "product_id": "TP-EPI",
+    "name": "4-epitetracycline",
+    "parent": "tetracycline",
+    "route": "abiotic C4 epimerisation (equilibrium, weakly acidic pH) \u2014 environmental transformation product",
+    "structure_status": "KNOWN (PubChem CID 54682506)",
+    "smiles": "C[C@@]1([C@H]2C[C@H]3[C@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O",
+    "formula": "C22H24N2O8",
+    "mw": 444.4,
+    "known_vs_predicted": "KNOWN",
+    "occurrence": "detected with parent in waters/manure matrices (epimer equilibrium)",
+    "residual_activity": {
+      "class": "RETAINED (reduced) \u2014 C4 epimer keeps full ring-chelation scaffold; equilibrates back to parent",
+      "evidence": "literature-supported",
+      "refs": [
+        "L18"
+      ]
+    },
+    "safety_triage": {
+      "class": "CONCERN for continued selective pressure: retains antibacterial activity hence drives AMR selection even after 'removal' of parent",
+      "toxicity_data": "limited",
+      "refs": [
+        "L18",
+        "L19"
+      ]
+    }
+  },
+  {
+    "product_id": "TP-ANHYDRO",
+    "name": "Anhydrotetracycline",
+    "parent": "tetracycline",
+    "route": "acid-catalysed C6 dehydration (abiotic; sediments/acidic microsites)",
+    "structure_status": "KNOWN (PubChem CID 54675758)",
+    "smiles": "CC1=C2C=CC=C(C2=C(C3=C1C[C@H]4[C@@H](C(=O)C(=C([C@]4(C3=O)O)O)C(=O)N)N(C)C)O)O",
+    "formula": "C22H22N2O7",
+    "mw": 426.4,
+    "known_vs_predicted": "KNOWN",
+    "residual_activity": {
+      "class": "RETAINED but altered (weak antibacterial; acts as competitive inhibitor of Tet(X)-family destructases)",
+      "evidence": "literature-supported",
+      "refs": [
+        "L04",
+        "L18"
+      ]
+    },
+    "safety_triage": {
+      "class": "MODERATE CONCERN \u2014 retains chelating chromophore; cytotoxicity reports in pharmacology literature; can suppress enzymatic detox (TetX inhibitor)",
+      "refs": [
+        "L04",
+        "L18"
+      ]
+    }
+  },
+  {
+    "product_id": "TP-OX",
+    "name": "Oxidation product group (laccase/MnP route)",
+    "parent": "tetracycline",
+    "route": "oxidative (laccase + mediator; MnP/Mn3+): demethylation, dimethylamino oxidation, decarbonylation, hydroxylation, oxidative dehydrogenation",
+    "structure_status": "PARTIALLY CHARACTERISED \u2014 7 possible products reported for MnP route (L07); laccase products partially described (L06)",
+    "smiles": null,
+    "known_vs_predicted": "KNOWN routes / individual structures partially resolved",
+    "residual_activity": {
+      "class": "reported antimicrobial-activity reduction for treatment effluents (assay-dependent)",
+      "evidence": "literature-supported (limited)",
+      "refs": [
+        "L06",
+        "L07"
+      ]
+    },
+    "safety_triage": {
+      "class": "INSUFFICIENT EVIDENCE \u2014 product-specific tox data sparse; mandatory LC-MS + bioassay follow-up",
+      "refs": [
+        "L06",
+        "L07"
+      ]
+    }
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "contaminant_id": "CID54675776",
+  "preferred_name": "Tetracycline",
+  "title": "Tetracycline",
+  "class": "Tetracycline-class broad-spectrum antibiotic",
+  "synonyms": [
+    "Tetracycline",
+    "Abricycline",
+    "Achromycin",
+    "Panmycin",
+    "Tetracyclin",
+    "(4S,4aS,5aS,6S,12aS)-4-(dimethylamino)-1,4,4a,5,5a,6,11,12a-octahydro-3,6,10,12,12a-pentahydroxy-6-methyl-1,11-dioxo-2-naphthacenecarboxamide"
+  ],
+  "identifiers": {
+    "pubchem_cid": 54675776,
+    "inchikey": "NWXMGUDVXFXRIG-WESIUVDSSA-N",
+    "chebi": "CHEBI:27902 (tetracycline antibiotic class relation)",
+    "cas": "60-54-8"
+  },
+  "formula": "C22H24N2O8",
+  "molecular_weight": "444.4",
+  "canonical_smiles": "CC1(C2CC3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O",
+  "isomeric_smiles": "C[C@@]1([C@H]2C[C@H]3[C@@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O",
+  "xlogp": -2,
+  "hbd": 6,
+  "hba": 9,
+  "rotatable_bonds": 2,
+  "tpsa": 182,
+  "structural_features": [
+    "Linear fused four-ring (naphthacene) scaffold",
+    "C11\u2013C12 beta-diketone + C1\u2013C3 enolamide (Mg2+-chelating pharmacophore required for ribosome binding)",
+    "C4 dimethylamino group (pH-dependent stereolabile/epimerisable centre)",
+    "C6 tertiary alcohol (acid-labile; dehydration yields anhydrotetracycline)",
+    "Ionisable at three pKa regions (~3.3, 7.7, 9.7): cation/zwitterion/anion speciation governs sorption & bioavailability"
+  ],
+  "provenance": {
+    "source": "PubChem PUG-REST",
+    "accession": "CID 54675776",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54675776",
+    "retrieved": "2026-09-17",
+    "license": "Public domain (US Gov)"
+  },
+  "environmental_chemistry": {
+    "persistence": "Generally low\u2013moderate aqueous persistence (photolysis, hydrolysis, epimerisation); persists when sorbed to sediments/sludge (strong sorption to clay/organic matter and multivalent cations).",
+    "speciation_note": "Binds Mg2+/Ca2+ strongly \u2014 both fate (sorption) and antimicrobial mechanism depend on chelation.",
+    "evidence": "literature-supported (review consensus)",
+    "source": "reviewed in Daghrir & Drogui 2013, Environ Chem Lett 11:209"
+  }
+}
